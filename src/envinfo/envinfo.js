@@ -4,3 +4,4 @@
 // VITE_storageBucket=bistro-boss-e2927.appspot.com
 // VITE_messagingSenderId=814190209894
 // VITE_appId=1:814190209894:web:40d95bbae364e25c98f6a
+//API_URL=http://localhost:5000

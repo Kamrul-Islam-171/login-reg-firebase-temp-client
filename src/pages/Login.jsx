@@ -55,7 +55,7 @@ const Login = () => {
             .then(result => {
                 
                 toast.success('Successfully logged in')
-                axios.post(`${import.meta.env.VITE_API_URL}/jwt`, { email: result?.user?.email }, { withCredentials: true })
+                axios.post(`${import.meta.env.API_URL}/jwt`, { email: result?.user?.email }, { withCredentials: true })
                     .then(data => {
                         console.log(data.data)
                         navigate(location?.state ? location.state : '/');
@@ -79,7 +79,7 @@ const Login = () => {
                 toast.success('Successfully logged in')
               
 
-                axios.post(`${import.meta.env.VITE_API_URL}/jwt`, { email: result?.user?.email }, { withCredentials: true })
+                axios.post(`${import.meta.env.API_URL}/jwt`, { email: result?.user?.email }, { withCredentials: true })
                     .then(data => {
                         console.log(data.data)
                         navigate(location?.state ? location.state : '/');
